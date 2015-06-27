@@ -6,3 +6,25 @@
   font-family: cfexpedition;
   src: url(../fonts/CFExpedition-Regular.ttf);
 }
+ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+}
+h1 {
+  font-family: cfexpedition, serif;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 48pt;
+  text-align: center;
+}
+h2 :extend h1 {
+  font-size: 25pt;
+}
+.head {
+  background: url("../img/head.png");
+}
+.opacity {
+  background: rgba(0, 0, 0, 0.5);
+}

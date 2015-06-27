@@ -6,3 +6,6 @@
   font-family: cfexpedition;
   src: url(../fonts/CFExpedition-Regular.ttf);
 }
+ul {
+  list-style: none;
+}
