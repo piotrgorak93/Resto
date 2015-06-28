@@ -1,0 +1,31 @@
+@import "__variables";
+
+.menu {
+  height: 500px;
+  text-align: center;
+}
+
+.menu-badge {
+  width: 120px;
+  height: 56px;
+  line-height: 47px;
+  position: relative;
+  background: @the-menu-color;
+  color: @font-color;
+  font-size: 11pt;
+  text-align: center;
+  margin: auto;
+}
+
+.menu-badge:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid @font-color;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+
+}

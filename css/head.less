@@ -6,16 +6,36 @@ h1 {
   color: @font-color;
   font-size: 48pt;
   text-align: center;
+  margin-top: 0;
 }
 
-h2 &:extend h1 {
-  font-size: 25pt;
+h2:extend(h1) {
+  font-family: 'Georgia', Times New Roman, Times, serif;
+  text-transform: none;
+  font-size: 11pt;
+  &:before {
+    overflow: hidden;
+    width: 100%;
+    height: 1px;
+    content: '\a0';
+    border-top: 4px solid #ffffff;
+  }
 }
 
 .head {
-  background: url("../img/head.png");
+  height: @head-height;
+  background: url("../img/head.png") 0 -30px;
+  margin: auto;
+  max-width: @max-width;
+  width: 100%;
+  border-bottom: @the-menu-color @border-width solid;
 }
 
-.opacity {
-  background: rgba(0, 0, 0, 0.5);
+.shadow {
+  height: @shadow-height;
+  background: @opacity-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
