@@ -615,10 +615,9 @@
           for (var i = pictures_number - 1; i >= 0; i--) {
             if(images.attr('height') === undefined) {
               return false;
-            };
-          };
-
-          return true;
+            }
+          }
+            return true;
         }
 
         if (unloaded === 0 || pictures_has_height(images)) {

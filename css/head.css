@@ -28,7 +28,7 @@ h2:before {
   border-bottom: #f34949 5px solid;
 }
 .shadow {
-  height: 647px;
+  height: 645px;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
