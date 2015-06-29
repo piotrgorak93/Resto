@@ -102,7 +102,18 @@ h2 span:after {
 }
 .menu {
   height: 500px;
-  text-align: center;
+}
+.menu-item {
+  display: inline-block;
+}
+.menu-name {
+  text-align: left;
+}
+.menu-price {
+  float: right;
+}
+.dish-container {
+  height: 300px;
 }
 .menu-badge {
   width: 120px;

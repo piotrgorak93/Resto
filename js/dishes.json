@@ -1,0 +1,212 @@
+[
+    {
+      "name": "Margherita",
+      "description": "Sos pomidorowy, Ser, Oregano",
+      "price": "13,90"
+    },
+    {
+      "name": "Cipolla",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Cebula",
+      "price": "16,90"
+    },
+    {
+      "name": "Pepperoni",
+      "description": "Sos pomidorowy, Ser, Oregano, Cebula, Salami pepperoni",
+      "price": "17,90"
+    },
+    {
+      "name": "Pollo",
+      "description": "Sos pomidorowy, Ser, Oregano, Kurczak",
+      "price": "17,90"
+    },
+    {
+      "name": "Prosciutto",
+      "description": "Sos pomidorowy, Ser, Oregano, Ser parmezan, Rukola, Pomidorki koktajlowe, Szynka włoska",
+      "price": "24,90"
+    },
+    {
+      "name": "Hawajska",
+      "description": "Sos pomidorowy, Ser, Oregano, Ananas, Szynka",
+      "price": "18,90"
+    },
+    {
+      "name": "Wegetariana",
+      "description": "Sos pomidorowy, Ser, Oregano, Kukurydza, Pomidory, Brokuły, Papryka",
+      "price": "19,90"
+    },
+    {
+      "name": "Hot Pepperoni",
+      "description": "Sos chili, Ser, Oregano, Papryczki jalapeno, Salami pepperoni, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Europeo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Wołowina, Szynka",
+      "price": "22,90"
+    },
+    {
+      "name": "Manzo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Papryka, Wołowina, Salami pepperoni, Cebula",
+      "price": "22,90"
+    },
+    {
+      "name": "Marakesz",
+      "description": "Sos pomidorowy, Ser, Oregano, Rukola, Pomidory suszone, Ser cheddar, Ser lazur",
+      "price": "24,90"
+    },
+    {
+      "name": "Farm",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Kurczak, Papryka, Cebula",
+      "price": "20,90"
+    },
+    {
+      "name": "Wegetariana",
+      "description": "Sos pomidorowy, Ser, Oregano, Kukurydza, Pomidory, Brokuły, Papryka",
+      "price": "19,90"
+    },
+    {
+      "name": "Hot Pepperoni",
+      "description": "Sos chili, Ser, Oregano, Papryczki jalapeno, Salami pepperoni, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Europeo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Wołowina, Szynka",
+      "price": "22,90"
+    },
+    {
+      "name": "Manzo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Papryka, Wołowina, Salami pepperoni, Cebula",
+      "price": "22,90"
+    },
+    {
+      "name": "Marakesz",
+      "description": "Sos pomidorowy, Ser, Oregano, Rukola, Pomidory suszone, Ser cheddar, Ser lazur",
+      "price": "24,90"
+    },
+    {
+      "name": "Wegetariana",
+      "description": "Sos pomidorowy, Ser, Oregano, Kukurydza, Pomidory, Brokuły, Papryka",
+      "price": "19,90"
+    },
+    {
+      "name": "Hot Pepperoni",
+      "description": "Sos chili, Ser, Oregano, Papryczki jalapeno, Salami pepperoni, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Europeo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Wołowina, Szynka",
+      "price": "22,90"
+    },
+    {
+      "name": "Manzo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Papryka, Wołowina, Salami pepperoni, Cebula",
+      "price": "22,90"
+    },
+    {
+      "name": "Marakesz",
+      "description": "Sos pomidorowy, Ser, Oregano, Rukola, Pomidory suszone, Ser cheddar, Ser lazur",
+      "price": "24,90"
+    },
+    {
+      "name": "Wegetariana",
+      "description": "Sos pomidorowy, Ser, Oregano, Kukurydza, Pomidory, Brokuły, Papryka",
+      "price": "19,90"
+    },
+    {
+      "name": "Hot Pepperoni",
+      "description": "Sos chili, Ser, Oregano, Papryczki jalapeno, Salami pepperoni, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Europeo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Wołowina, Szynka",
+      "price": "22,90"
+    },
+    {
+      "name": "Manzo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Papryka, Wołowina, Salami pepperoni, Cebula",
+      "price": "22,90"
+    },
+    {
+      "name": "Marakesz",
+      "description": "Sos pomidorowy, Ser, Oregano, Rukola, Pomidory suszone, Ser cheddar, Ser lazur",
+      "price": "24,90"
+    },
+    {
+      "name": "Quatro Fromaggi",
+      "description": "Sos pomidorowy, Ser mozarella, Oregano Pomidory, Ser camembert, Ser cheddar, Ser lazur",
+      "price": "24,90"
+    },
+    {
+      "name": "Spinacci",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Szpinak, Cebula",
+      "price": "18,90"
+    },
+    {
+      "name": "Al Diavolo",
+      "description": "Sos pomidorowy, Ser, Oregano, Papryczki pepperoni, Salami pepperoni, Szynka, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Vulcano",
+      "description": "Sos pomidorowy, Ser, Oregano, Papryczki pepperoni, Salami pepperoni, Bekon, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Giuliano",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Bekon, Szynka",
+      "price": "19,90"
+    },
+    {
+      "name": "Wegetariana",
+      "description": "Sos pomidorowy, Ser, Oregano, Kukurydza, Pomidory, Brokuły, Papryka",
+      "price": "19,90"
+    },
+    {
+      "name": "Hot Pepperoni",
+      "description": "Sos chili, Ser, Oregano, Papryczki jalapeno, Salami pepperoni, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Europeo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Wołowina, Szynka",
+      "price": "22,90"
+    },
+    {
+      "name": "Manzo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Papryka, Wołowina, Salami pepperoni, Cebula",
+      "price": "22,90"
+    },
+    {
+      "name": "Marakesz",
+      "description": "Sos pomidorowy, Ser, Oregano, Rukola, Pomidory suszone, Ser cheddar, Ser lazur",
+      "price": "24,90"
+    },
+    {
+      "name": "Wegetariana",
+      "description": "Sos pomidorowy, Ser, Oregano, Kukurydza, Pomidory, Brokuły, Papryka",
+      "price": "19,90"
+    },
+    {
+      "name": "Hot Pepperoni",
+      "description": "Sos chili, Ser, Oregano, Papryczki jalapeno, Salami pepperoni, Cebula",
+      "price": "19,90"
+    },
+    {
+      "name": "Europeo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Wołowina, Szynka",
+      "price": "22,90"
+    },
+    {
+      "name": "Manzo",
+      "description": "Sos pomidorowy, Ser, Oregano, Pieczarki, Papryka, Wołowina, Salami pepperoni, Cebula",
+      "price": "22,90"
+    },
+    {
+      "name": "Marakesz",
+      "description": "Sos pomidorowy, Ser, Oregano, Rukola, Pomidory suszone, Ser cheddar, Ser lazur",
+      "price": "24,90"
+    }
+  ]
