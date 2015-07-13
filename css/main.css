@@ -46,6 +46,17 @@ nav ul a li {
 nav ul a li:hover {
   background-color: #f34949;
 }
+@media screen and (max-width: 768px) {
+  nav .small-3 {
+    padding-right: 0;
+  }
+  nav .small-9 {
+    padding: 0;
+  }
+  nav ul a li {
+    padding: 5px 20px 5px 20px;
+  }
+}
 h1,
 h2 {
   font-family: cfexpedition, serif;
@@ -85,7 +96,6 @@ h2 span:after {
   margin-left: 50px;
 }
 .head {
-  height: 650px;
   background: url("../img/head.png") 0 -30px;
   margin: auto;
   max-width: 1500px;
@@ -100,20 +110,46 @@ h2 span:after {
   justify-content: center;
   align-items: center;
 }
-.menu {
-  height: 500px;
+.button {
+  background-color: white;
+  color: #000;
+  border: 1px solid #cacaca;
+}
+.button:hover {
+  background-color: #f34949;
+}
+.dish {
+  float: left;
 }
 .menu-item {
-  display: inline-block;
+  float: left;
+  margin-bottom: 20px;
 }
 .menu-name {
   text-align: left;
+  font-weight: bold;
+  width: auto;
+  display: inline;
+}
+hr {
+  display: inline-block;
+  border: 1px solid #b4b4b4;
+  margin: 15px 15px inherit;
+  width: 60%;
+  opacity: 0.5;
+  float: right;
 }
 .menu-price {
   float: right;
 }
+.menu-description {
+  font-size: 10pt;
+  font-style: italic;
+  color: #b4b4b4;
+  width: 395px;
+}
 .dish-container {
-  height: 300px;
+  margin-top: 25px;
 }
 .menu-badge {
   width: 120px;
@@ -136,6 +172,40 @@ h2 span:after {
   border-bottom: 8px solid #ffffff;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
+}
+@media screen and (max-width: 1024px) {
+  .dish {
+    padding-left: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dish {
+    padding-left: 50px;
+  }
+}
+.repeat-enter-setup,
+.repeat-leave-setup {
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+.repeat-enter-setup {
+  line-height: 0;
+  opacity: 0;
+}
+.repeat-enter-setup.repeat-enter-start {
+  line-height: 20px;
+  opacity: 1;
+}
+.repeat-leave-setup {
+  opacity: 1;
+  line-height: 20px;
+}
+.repeat-leave-setup.repeat-leave-start {
+  opacity: 0;
+  line-height: 0;
 }
 .featured {
   height: 700px;

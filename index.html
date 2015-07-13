@@ -11,9 +11,9 @@
 <body>
 
 <nav class="row">
-    <div class="large-6 columns">
+    <div class="small-3 columns">
         <a href="." class="logo"><img src="img/logo.png" alt="Logo Resto"/> </a></div>
-    <div class="large-6 columns">
+    <div class="small-9 columns">
         <ul>
             <a href="#">
                 <li>Our story</li>
@@ -43,24 +43,38 @@
 
 <section class="menu row" ng-app="menu-iterator">
     <div class="menu-badge">The Menu</div>
-    <div class="dish-container small-12 large-6 columns" ng-controller="menu-controller">
-        <div ng-repeat="dish in menu| limitTo:3:0">
-            <div class="menu-item small-10 columns">
-                <div class="menu-name">{{dish.name}}</div>
-                <div class="menu-description">{{dish.description}}</div>
+    <div class="dish-container small-12" ng-controller="menu-controller">
+        <div class="large-6 columns">
+            <div ng-repeat="dish in menu |limitTo:limit:0"
+                 ng-animate="'repeat'"
+                 class="menu-item small-12">
+                <div class="dish small-10">
+                    <div class="menu-name">{{dish.name}}</div>
+                    <hr />
+                    <div class="menu-description">{{dish.description}}</div>
+                </div>
+                <div class="menu-price small-2">{{dish.price}}zł</div>
+
             </div>
-            <div class="menu-price small-2">{{dish.price}}zł</div>
         </div>
+        <div class="large-6 columns">
+            <div ng-repeat="dish in menu2 |limitTo:limit2:0" class="menu-item small-12">
+                <div class="dish small-10">
+                    <div class="menu-name">{{dish.name}}</div>
+                    <hr />
+                    <div class="menu-description">{{dish.description}}</div>
+                </div>
+                <div class="menu-price small-2">{{dish.price}}zł</div>
+            </div>
+        </div>
+        <div class="text-center"><a class="button" id="load-more" ng-click="incrementLimit()">Pokaż więcej</a></div>
     </div>
-    <button id="load-more" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button><br>
-    <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
-        <li><a href="#">This is a link</a></li>
-        <li><a href="#">This is another</a></li>
-        <li><a href="#">Yet another</a></li>
-    </ul>
+
+
 </section>
 <section class="featured row">
     <div class="large-6 columns">
+        Lorem ipsum
     </div>
 </section>
 <section class="gallery"></section>
@@ -93,7 +107,9 @@
 </footer>
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
+<script src="js/functions.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+<script src="js/jquery.columnizer.js"></script>
 <script src="js/angular-files/menu.js"></script>
 <script>
     $(document).foundation();

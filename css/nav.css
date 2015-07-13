@@ -20,3 +20,14 @@ nav ul a li {
 nav ul a li:hover {
   background-color: #f34949;
 }
+@media screen and (max-width: 768px) {
+  nav .small-3 {
+    padding-right: 0;
+  }
+  nav .small-9 {
+    padding: 0;
+  }
+  nav ul a li {
+    padding: 5px 20px 5px 20px;
+  }
+}

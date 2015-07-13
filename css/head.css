@@ -37,7 +37,6 @@ h2 span:after {
   margin-left: 50px;
 }
 .head {
-  height: 650px;
   background: url("../img/head.png") 0 -30px;
   margin: auto;
   max-width: 1500px;
