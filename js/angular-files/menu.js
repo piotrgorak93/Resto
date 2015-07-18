@@ -14,7 +14,6 @@ app.controller('menu-controller', function ($scope, $http) {
     $scope.incrementLimit = function () {
         $scope.limit += 5;
         $scope.limit2 += 5;
-
         if ($scope.splitted[1][0].length <= $scope.limit) {
             $("#load-more").remove();
         }
