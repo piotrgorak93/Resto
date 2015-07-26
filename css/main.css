@@ -11,6 +11,7 @@ ul {
 }
 * {
   font-family: 'Georgia', Times New Roman, Times, serif;
+  background-color: red;
 }
 a {
   color: #000000;
@@ -29,6 +30,7 @@ nav {
   padding-bottom: 30px;
 }
 nav ul {
+  float: right;
   margin: 0;
 }
 nav ul a:hover {
