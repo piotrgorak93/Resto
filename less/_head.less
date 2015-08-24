@@ -54,3 +54,12 @@ h2:extend(h1) {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 560px){
+    h2{
+        span {
+              &:before, &:after {
+              display: none;
+              }
+        }
+    } 
+}

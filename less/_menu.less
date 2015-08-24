@@ -29,7 +29,7 @@
 hr {
   display: inline-block;
   border: 1px solid @grey-color;
-  margin: 15px 15px inherit;
+  margin: 10px 15px;
   width: 55%;
   opacity: 0.5;
   float: right;
@@ -43,7 +43,7 @@ hr {
   font-size: 10pt;
   font-style: italic;
   color: @grey-color;
-  width: 395px;
+  word-wrap: break-word;
 }
 
 .dish-container {
@@ -85,31 +85,9 @@ hr {
     padding-left: 50px;
   }
 }
-
-.repeat-enter-setup, .repeat-leave-setup {
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-  transition: all linear 0.3s;
-}
-
-.repeat-enter-setup {
-  line-height: 0;
-  opacity: 0;
-}
-
-.repeat-enter-setup.repeat-enter-start {
-  line-height: 20px;
-  opacity: 1;
-}
-
-.repeat-leave-setup {
-  opacity: 1;
-  line-height: 20px;
-}
-
-.repeat-leave-setup.repeat-leave-start {
-  opacity: 0;
-  line-height: 0;
+@media screen and (max-width: 550px){
+  hr{
+    margin-left: 0;
+    width: 50%;
+  }
 }

@@ -1,0 +1,54 @@
+module.exports = function(grunt) {
+  require('jit-grunt')(grunt);
+
+  grunt.initConfig({
+ 	concat: {
+   		 options: {
+      separator: ';',
+    },
+    dist: {
+      src: ['js/**/*js'],
+      dest: 'js/all.js',
+    },
+  },
+    less: {
+      development: {
+        options: {
+          compress: true,
+          yuicompress: true,
+          optimization: 2
+        },
+        files: {
+          "css/main.css": "less/main.less" // destination file and source file
+        }
+      }
+    },
+    uglify: {
+      options: {
+        mangle: false
+      }
+    },
+    watch: {
+      styles: {
+        files: ['less/**/*.less'], // which files to watch
+        tasks: ['less'],
+        options: {
+          nospawn: true
+        }
+      },
+      js: {
+        files: ['js/**/*.js'],
+        tasks: ['uglify'],
+        options: {
+          nospawn: true
+        }
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  grunt.registerTask('default', ['less', 'uglify', 'concat', 'watch']);
+};
