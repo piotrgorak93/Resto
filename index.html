@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="pl">
+<html class="no-js" lang="pl" ng-app="resto">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr.js"></script>
     </head>
-    <body>
+    <body ng-controller="menu-controller">
         <nav class="row data-topbar" role="navigation">
             <div class="small-3 columns">
                 <a href="." class="logo"><img src="img/logo.png" alt="Logo Resto"/> </a></div>
@@ -41,9 +41,9 @@
                     <h2><span>resto restaurant home page website template</span></h2>
                 </div>
             </section>
-            <section class="menu row" ng-app="menu-iterator">
+            <section class="menu row">
                 <div class="menu-badge">The Menu</div>
-                <div class="dish-container small-12" ng-controller="menu-controller" >
+                <div class="dish-container small-12" >
                     <div class="large-6 columns">
                         <div ng-repeat="dish in menu |limitTo:limit:0"
                             ng-animate="'repeat'" on-finish-render="ngRepeatFinished"
@@ -75,11 +75,14 @@
             <section class="featured row">
                 <div class="small-12 large-12 columns">
                     <div>Featured dishes<hr /></div>
-                    <div class="owl-carousel">
-                        <div><img src="img/dish1.png" alt="Dish 1"></div>
-                        <div><img src="img/dish2.png" alt="Dish 2"></div>
-                        <div><img src="img/dish3.png" alt="Dish 3"></div>
-                        <div><img src="img/dish4.png" alt="Dish 4"></div>
+                    <div class="featured">
+                        <div ng-repeat="dish in featured">
+                        <div ng-if="dish.featured">
+                            <div>{{dish.name}}</div>
+                            <div>{{dish.price}}</div>
+                            <img ng-src={{dish.image}} alt="Image" />
+                        </div>
+                        </div>
                     </div>
                 </div>
             </section>
