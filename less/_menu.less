@@ -1,93 +1,94 @@
 @import "_variables";
 
 .button {
-  background-color: white;
-  color: #000;
-  border: 1px solid #cacaca;
-  &:hover {
-    background-color: @the-menu-color;
-  }
+    background-color: white;
+    color: #000;
+    border: 1px solid #cacaca;
+    &:hover {
+        background-color: @the-menu-color;
+    }
 }
 
 .dish {
-  float: left;
+    float: left;
 
 }
 
 .menu-item {
-  float: left;
-  margin-bottom: 20px;
+    float: left;
+    margin-bottom: 20px;
 }
 
 .menu-name {
-  text-align: left;
-  font-weight: bold;
-  width: auto;
-  display: inline;
+    text-align: left;
+    font-weight: bold;
+    width: auto;
+    display: inline;
 }
 
 hr {
-  display: inline-block;
-  border: 1px solid @grey-color;
-  margin: 10px 15px;
-  width: 55%;
-  opacity: 0.5;
-  float: right;
+    display: inline-block;
+    border: 1px solid @grey-color;
+    margin: 10px 15px;
+    width: 55%;
+    opacity: 0.5;
+    float: right;
 }
 
 .menu-price {
-  float: right;
+    float: right;
 }
 
 .menu-description {
-  font-size: 10pt;
-  font-style: italic;
-  color: @grey-color;
-  word-wrap: break-word;
+    font-size: 10pt;
+    font-style: italic;
+    color: @grey-color;
+    word-wrap: break-word;
 }
 
 .dish-container {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .menu-badge {
-  width: 120px;
-  height: 56px;
-  line-height: 47px;
-  position: relative;
-  background: @the-menu-color;
-  color: @font-color;
-  font-size: 11pt;
-  text-align: center;
-  margin: auto;
+    width: 120px;
+    height: 56px;
+    line-height: 47px;
+    position: relative;
+    background: @the-menu-color;
+    color: @font-color;
+    font-size: 11pt;
+    text-align: center;
+    margin: auto;
 }
 
 .menu-badge:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 8px solid @font-color;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid @font-color;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
 }
 
 @media screen and (max-width: 1024px) {
-  .dish {
-    padding-left: 80px;
-  }
+    .dish {
+        padding-left: 80px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .dish {
-    padding-left: 50px;
-  }
+    .dish {
+        padding-left: 50px;
+    }
 }
-@media screen and (max-width: 550px){
-  hr{
-    margin-left: 0;
-    width: 50%;
-  }
+
+@media screen and (max-width: 550px) {
+    hr {
+        margin-left: 0;
+        width: 50%;
+    }
 }

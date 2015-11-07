@@ -1,45 +1,45 @@
 @import "_variables";
 
 nav {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  ul {
-    float: right;
-    margin: 0;
-    a {
-      &:hover {
-        color: @font-color;
-      }
-      li {
-        transition: @nav-transition;
-        -moz-transition: @nav-transition;
-        -webkit-transition: @nav-transition;
-        padding: 10px 20px 10px 20px;
-        font-size: 10pt;
-        display: inline-block;
-        vertical-align: middle;
-        &:hover {
-          background-color: @the-menu-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    ul {
+        float: right;
+        margin: 0;
+        a {
+            &:hover {
+                color: @font-color;
+            }
+            li {
+                transition: @nav-transition;
+                -moz-transition: @nav-transition;
+                -webkit-transition: @nav-transition;
+                padding: 10px 20px 10px 20px;
+                font-size: 10pt;
+                display: inline-block;
+                vertical-align: middle;
+                &:hover {
+                    background-color: @the-menu-color;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    .small-3 {
-      padding-right: 0;
-    }
-    .small-9{
-      padding: 0;
-    }
-    ul {
-      a {
-        li {
-          padding: 5px 20px 5px 20px;
+    nav {
+        .small-3 {
+            padding-right: 0;
         }
-      }
+        .small-9 {
+            padding: 0;
+        }
+        ul {
+            a {
+                li {
+                    padding: 5px 20px 5px 20px;
+                }
+            }
+        }
     }
-  }
 }

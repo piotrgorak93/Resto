@@ -1,10 +1,51 @@
 .featured {
-  height: 700px;
-  text-transform: uppercase;
-  font-weight: bold;
-  hr{
-  	float: none;
-  	margin-bottom: 5px;
-  	width: 20%;
-  }
+    height: 700px;
+    text-transform: uppercase;
+    font-weight: bold;
+    hr {
+        float: none;
+        margin-bottom: 5px;
+        width: 20%;
+    }
+    .featured-gallery-wrapper {
+        overflow: hidden;
+    }
+    .featured-item {
+        display: inline;
+        float: left;
+        margin-right: 10px;
+    }
+    .dish-name, .dish-price, .dish-item {
+        width: 306px;
+    }
+    .arrow {
+        height: 64px;
+        width: 64px;
+        background: url("../img/arrow-right.png");
+        position: absolute;
+    }
+    .arrow-left {
+        &:extend(.featured .arrow);
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        float: left;
+    }
+
+    .arrow-right {
+        &:extend(.featured .arrow);
+        float: right;
+    }
+    .fa-star {
+        color: @star-color;
+    }
+    .fa-star-half-o {
+        color: @star-color;
+    }
+    .fa-star-o {
+        color: @empty-star-color;
+    }
 }

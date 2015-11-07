@@ -1,65 +1,66 @@
 @import "_variables";
 
 h1 {
-  font-family: cfexpedition, serif;
-  text-transform: capitalize;
-  color: @font-color;
-  font-size: 48pt;
-  text-align: center;
-  margin-top: 0;
+    font-family: cfexpedition, serif;
+    text-transform: capitalize;
+    color: @font-color;
+    font-size: 48pt;
+    text-align: center;
+    margin-top: 0;
 }
 
 h2:extend(h1) {
-  font-family: 'Georgia', Times New Roman, Times, serif;
-  text-transform: none;
-  font-size: 11pt;
-  line-height: 0.5;
-  text-align: center;
-  margin-top: 20px;
-  span {
-    display: inline-block;
-    position: relative;
-    &:before, &:after {
-      content: "";
-      position: absolute;
-      height: 5px;
-      border-bottom: 1px solid white;
-      top: 0;
-      width: 100px;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    text-transform: none;
+    font-size: 11pt;
+    line-height: 0.5;
+    text-align: center;
+    margin-top: 20px;
+    span {
+        display: inline-block;
+        position: relative;
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            height: 5px;
+            border-bottom: 1px solid white;
+            top: 0;
+            width: 100px;
+        }
+        &:before {
+            right: 100%;
+            margin-right: 50px;
+        }
+        &:after {
+            left: 100%;
+            margin-left: 50px;
+        }
     }
-    &:before {
-      right: 100%;
-      margin-right: 50px;
-    }
-    &:after {
-      left: 100%;
-      margin-left: 50px;
-    }
-  }
 }
 
 .head {
-  background: url("../img/head.png") 0 -30px;
-  margin: auto;
-  max-width: @max-width;
-  width: 100%;
-  border-bottom: @the-menu-color @border-width solid;
+    background: url("../img/head.png") 0 -30px;
+    margin: auto;
+    max-width: @max-width;
+    width: 100%;
+    border-bottom: @the-menu-color @border-width solid;
 }
 
 .shadow {
-  height: @shadow-height;
-  background: @opacity-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    height: @shadow-height;
+    background: @opacity-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-@media screen and (max-width: 560px){
-    h2{
+
+@media screen and (max-width: 560px) {
+    h2 {
         span {
-              &:before, &:after {
-              display: none;
-              }
+            &:before, &:after {
+                display: none;
+            }
         }
-    } 
+    }
 }

@@ -4,7 +4,8 @@
     "description": "Sos pomidorowy, Ser, Oregano",
     "price": "13,90",
     "featured": "true",
-    "rating": "1.5"
+    "rating": "1.5",
+    "image" : "img/0.png"
   },
   {
     "name": "Cipolla",
@@ -36,7 +37,7 @@
     "price": "24,90",
     "featured": "true",
     "rating": "4.1",
-    "image": "4.png"
+    "image": "img/4.png"
   },
   {
     "name": "Hawajska",
@@ -44,7 +45,7 @@
     "price": "18,90",
     "featured": "true",
     "rating": "3.1",
-    "image": "5.png"
+    "image": "img/5.png"
   },
   {
     "name": "Wegetariana",
@@ -52,7 +53,7 @@
     "price": "19,90",
     "featured": "true",
     "rating": "2.7",
-    "image": "6.png"
+    "image": "img/6.png"
   },
   {
     "name": "Hot Pepperoni",
@@ -60,7 +61,7 @@
     "price": "19,90",
     "featured": "true",
     "rating": "4.8",
-    "image": "7.png"
+    "image": "img/7.png"
   },
   {
     "name": "Europeo",

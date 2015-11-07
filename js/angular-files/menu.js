@@ -3,17 +3,22 @@
  */
 var app = angular.module('resto', []);
 
-app.controller('menu-controller', function($scope, $http) {
-    $http.get('js/dishes.json').success(function(data) {
+app.controller('menu-controller', function ($scope, $http) {
+    $http.get('js/dishes.json').success(function (data) {
         $scope.splitted = split_json(data);
         $scope.menu = $scope.splitted[0][0];
         $scope.menu2 = $scope.splitted[1][0];
         $scope.limit = 5;
         $scope.limit2 = 5;
-        $scope.featured = data;
+        var featured = get_featured(data);
+        $scope.featured = featured;
+        $scope.ratings = calculate_rating(featured);
+        $scope.range = function (n) {
+            return new Array(n);
+        };
     });
 
-    $scope.incrementLimit = function() {
+    $scope.incrementLimit = function () {
 
         $scope.limit += 5;
         $scope.limit2 += 5;
@@ -22,17 +27,18 @@ app.controller('menu-controller', function($scope, $http) {
 
         }
     };
-    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+    $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
         add_margin_description();
+        prepareSlider();
     });
 
 });
-app.directive('onFinishRender', function($timeout) {
+app.directive('onFinishRender', function ($timeout) {
     return {
         restrict: 'A',
-        link: function(scope, element, attr) {
+        link: function (scope, element, attr) {
             if (scope.$last === true) {
-                $timeout(function() {
+                $timeout(function () {
                     scope.$emit('ngRepeatFinished');
                 });
             }
@@ -53,5 +59,25 @@ function split_json(data) {
         [split1],
         [split2]
     ];
+}
 
+function calculate_rating(featuredItem) {
+    var decimal = Math.floor(featuredItem.rating);
+    var putHalfStar = featuredItem.rating % 1 > 0.5;
+    var numberOfEmptyStars = function () {
+        return putHalfStar ? 5 - decimal - putHalfStar : 5 - decimal;
+    };
+    return [decimal, putHalfStar, numberOfEmptyStars()];
+}
+
+function get_featured(data) {
+    var featuredDishes = [];
+    $.each(data, function (index, val) {
+        if (val.featured) {
+            val['detailedRating'] = calculate_rating(val);
+            featuredDishes.push(val);
+        }
+    });
+    console.log(featuredDishes);
+    return featuredDishes;
 }
