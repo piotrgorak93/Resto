@@ -29,7 +29,7 @@ app.controller('menu-controller', function ($scope, $http) {
     };
     $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
         add_margin_description();
-        prepareSlider();
+        $("body").sliderResto();
     });
 
 });
@@ -78,6 +78,5 @@ function get_featured(data) {
             featuredDishes.push(val);
         }
     });
-    console.log(featuredDishes);
     return featuredDishes;
 }

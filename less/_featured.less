@@ -9,20 +9,29 @@
     }
     .featured-gallery-wrapper {
         overflow: hidden;
+        margin: auto;
     }
     .featured-item {
+        position: relative;
         display: inline;
         float: left;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
-    .dish-name, .dish-price, .dish-item {
-        width: 306px;
+    .dish-name, .dish-item {
+        width: 305px;
+    }
+    .dish-price {
+        width: 50px;
+        display: inline;
     }
     .arrow {
         height: 64px;
         width: 64px;
         background: url("../img/arrow-right.png");
         position: absolute;
+        display: none;
+        cursor: pointer;
     }
     .arrow-left {
         &:extend(.featured .arrow);
@@ -30,14 +39,17 @@
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
-        filter: FlipH;
         -ms-filter: "FlipH";
         float: left;
+        top: 130px;
+        left: -25px;
     }
 
     .arrow-right {
         &:extend(.featured .arrow);
         float: right;
+        bottom: 95px;
+        right: -25px;
     }
     .fa-star {
         color: @star-color;
@@ -47,5 +59,9 @@
     }
     .fa-star-o {
         color: @empty-star-color;
+    }
+    .featured-header {
+        padding-left: 15px;
+        padding-bottom: 15px;
     }
 }

@@ -73,10 +73,11 @@
 </section>
 <section class="featured row">
     <div class="small-12 large-12 columns">
-        <div>Featured dishes
+        <div class="featured-header">
+            Featured dishes
             <hr/>
         </div>
-        <div class="arrow-left hidden"></div>
+        <div class="arrow-left"></div>
         <div class="featured-gallery-wrapper">
             <div class="featured-gallery">
                 <div ng-repeat="dish in featured track by $index" class="featured-item">
@@ -85,25 +86,29 @@
                         <img ng-src={{dish.image}} alt="Image"/>
 
                         <div class="dish-price">{{dish.price}}</div>
-
-                        <div ng-repeat="1 in range(dish.detailedRating[0]) track by $index" class="left">
-                            <div class="fa fa-star"></div>
-                        </div>
-                        <div class="left">
-                            <div ng-if="dish.detailedRating[1]" class="fa fa-star-half-o"></div>
-                        </div>
-                        <div ng-repeat="1 in range(dish.detailedRating[2]) track by $index" class="left">
-                            <div class="fa fa-star-o"></div>
+                        <div class="right">
+                            <div ng-repeat="1 in range(dish.detailedRating[0]) track by $index" class="left">
+                                <div class="fa fa-star"></div>
+                            </div>
+                            <div class="left">
+                                <div ng-if="dish.detailedRating[1]" class="fa fa-star-half-o"></div>
+                            </div>
+                            <div ng-repeat="1 in range(dish.detailedRating[2]) track by $index" class="left">
+                                <div class="fa fa-star-o"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="arrow-right hidden"></div>
+        <div class="arrow-right"></div>
     </div>
 </section>
 <section class="gallery">
-
+    <div class="gallery-header">
+        The gallery
+        <hr/>
+    </div>
 </section>
 <footer class="row display">
     <ul class="small-12 medium-6 large-3 columns">
