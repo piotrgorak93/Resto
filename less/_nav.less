@@ -6,23 +6,25 @@ nav {
     ul {
         float: right;
         margin: 0;
-        a {
+
+        li {
+            transition: @nav-transition;
+            -moz-transition: @nav-transition;
+            -webkit-transition: @nav-transition;
+            padding: 10px 20px 10px 20px;
+            font-size: 10pt;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
             &:hover {
+                background-color: @the-menu-color;
                 color: @font-color;
             }
-            li {
-                transition: @nav-transition;
-                -moz-transition: @nav-transition;
-                -webkit-transition: @nav-transition;
-                padding: 10px 20px 10px 20px;
-                font-size: 10pt;
-                display: inline-block;
-                vertical-align: middle;
-                &:hover {
-                    background-color: @the-menu-color;
-                }
-            }
+
         }
+    }
+    .medium-0 {
+        display: none;
     }
 }
 
@@ -35,11 +37,39 @@ nav {
             padding: 0;
         }
         ul {
-            a {
-                li {
-                    padding: 5px 20px 5px 20px;
+            li {
+                padding: 10px 10px 10px 0;
+                &:hover {
+                    background-color: initial;
+                    color: initial;
                 }
             }
+        }
+        .small-0 {
+            display: none;
+        }
+        .medium-0 {
+            &.small-12 {
+                display: none;
+                border-top: 1px solid @the-menu-color;
+                margin-top: 30px;
+                ul {
+                    margin-top: 20px;
+                }
+            }
+            display: block;
+            text-align: right;
+            ul {
+                float: left;
+                li {
+                    text-align: left;
+                    display: block;
+                }
+            }
+        }
+        .fa-bars {
+            font-size: 22pt;
+            cursor: pointer;
         }
     }
 }

@@ -1,5 +1,81 @@
 .gallery {
-    height: 800px;
-    color: red;
-    background: green;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    .gallery-header {
+        padding-bottom: 25px;
+    }
+    .gallery-item {
+        width: 200px;
+        display: inline;
+        float: left;
+    }
+    .gallery-dish {
+        float: left;
+        width: 33%;
+        position: relative;
+    }
+    .gallery-first-dish {
+        &:extend(.gallery .gallery-dish);
+        background: url("../img/8.png") center center no-repeat;
+        height: 434px;
+    }
+    .gallery-other-dish {
+        height: 217px;
+    }
+    .gallery-second-dish {
+        &:extend(.gallery .gallery-dish);
+        &:extend(.gallery .gallery-other-dish);
+        background: url("../img/9.png") center center no-repeat;
+        height: 217px;
+    }
+    .gallery-third-dish {
+        &:extend(.gallery .gallery-dish);
+        &:extend(.gallery .gallery-other-dish);
+        background: url("../img/10.png") center center no-repeat;
+        height: 217px;
+    }
+    .gallery-fourth-dish {
+        &:extend(.gallery .gallery-dish);
+        &:extend(.gallery .gallery-other-dish);
+        background: url("../img/11.png") center center no-repeat;
+        height: 217px;
+    }
+    .gallery-fifth-dish {
+        &:extend(.gallery .gallery-dish);
+        &:extend(.gallery .gallery-other-dish);
+        background: url("../img/12.png") center center no-repeat;
+        height: 217px;
+    }
+    .gallery-dish-hover {
+        justify-content: center;
+        align-items: center;
+        background: @dish-hover-color;
+        float: left;
+        width: 100%;
+        display: none;
+        position: absolute;
+        bottom: 0;
+    }
+    .gallery-dish-force-flex {
+        display: flex !important;
+    }
+    .gallery-first-dish-hover {
+        &:extend(.gallery .gallery-dish-hover);
+        height: 434px;
+    }
+    .gallery-other-dish-hover {
+        &:extend(.gallery .gallery-dish-hover);
+        height: 217px;
+    }
+    .gallery-container {
+        ul {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+
 }
