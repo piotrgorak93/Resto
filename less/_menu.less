@@ -80,9 +80,9 @@ hr {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .dish {
-        padding-left: 50px;
+        padding-left: 0;
     }
 }
 
@@ -90,5 +90,21 @@ hr {
     hr {
         margin-left: 0;
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .featured-item {
+        .dish-item {
+            .right {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .featured-header {
+        .right {
+            margin-right: -20px;
+        }
     }
 }

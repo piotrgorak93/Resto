@@ -22,10 +22,10 @@
     var prepareSlider = function () {
         var allItemsWidthSum = 0;
         featuredItemSelector.each(function (index, value) {
-            allItemsWidthSum += $(value).width() + 10;
+            allItemsWidthSum += $(value).width() + 28;
         });
 
-        $(".featured-gallery-wrapper").width((featuredItemSelector.width() + 10) * 3);
+        //$(".featured-gallery-wrapper").width((featuredItemSelector.width() + 10) * 3);
         $(".featured-gallery").width(allItemsWidthSum);
         createArrows();
     };
@@ -37,7 +37,7 @@
 
     var trackLeftArrow = function () {
         if (previousShift == 0) {
-            arrowLeftSelector.hide();
+            arrowLeftSelector.addClass("disabled-arrow");
         }
 
     };
@@ -47,15 +47,14 @@
     };
 
     var trackRightArrow = function () {
-        if (previousShift == (numberOfElements - 3) * 315 * -1) {
-
-            arrowRightSelector.hide();
+        if (previousShift == (numberOfElements - 3) * 333 * -1) {
+            arrowRightSelector.addClass("disabled-arrow");
         }
     };
 
     var createRightArrow = function () {
-        if ($(".featured-gallery").width() > $(".featured-gallery-wrapper").width()) {
-            arrowRightSelector.show();
+        if ($(".featured-gallery").width() < $(".featured-gallery-wrapper").width()) {
+            arrowRightSelector.addClass("disabled-arrow");
         }
         bindRightArrowEvent();
     };
@@ -63,18 +62,21 @@
     var bindRightArrowEvent = function () {
 
         arrowRightSelector.click(function () {
-            arrowLeftSelector.show();
+            arrowLeftSelector.removeClass("disabled-arrow");
             var featuredItemSelector = $(".featured-item");
-            featuredItemSelector.css("left", previousShift = previousShift - 315);
+            if (!arrowRightSelector.hasClass("disabled-arrow")){
+                featuredItemSelector.css("left", previousShift = previousShift - 333);
+            }
             trackRightArrow();
         });
     };
 
     var bindLeftArrowEvent = function () {
         arrowLeftSelector.click(function () {
-            arrowRightSelector.show();
-            arrowLeftSelector.show();
-            featuredItemSelector.css("left", previousShift = previousShift + 315);
+            arrowRightSelector.removeClass("disabled-arrow");
+            if (!arrowLeftSelector.hasClass("disabled-arrow")) {
+                featuredItemSelector.css("left", previousShift = previousShift + 333);
+            }
             trackLeftArrow();
         });
     }
